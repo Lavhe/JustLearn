@@ -1,10 +1,10 @@
 <template>
 	<!-- App -->
 	<div id="app">
-		
+
 		<!-- Statusbar -->
 		<f7-statusbar></f7-statusbar>
-		
+
 		<!-- Left Panel -->
 		<f7-panel left reveal layout="dark">
 			<f7-view id="left-panel-view" navbar-through :dynamic-navbar="true">
@@ -12,7 +12,7 @@
 				<f7-pages>
 					<f7-page>
 						<f7-block inner>
-							<p>Left panel content goes here</p>
+							<p></p>
 						</f7-block>
 						<f7-block-title>Load page in panel</f7-block-title>
 						<f7-list>
@@ -28,7 +28,7 @@
 				</f7-pages>
 			</f7-view>
 		</f7-panel>
-		
+
 		<!-- Right Panel -->
 		<f7-panel right cover layout="dark">
 			<f7-view id="right-panel-view" navbar-through :dynamic-navbar="true">
@@ -52,7 +52,7 @@
 				</f7-pages>
 			</f7-view>
 		</f7-panel>
-		
+
 		<!-- Main Views -->
 		<f7-views>
 			<f7-view id="main-view" navbar-through :dynamic-navbar="true" main>
@@ -105,7 +105,7 @@
 				</f7-pages>
 			</f7-view>
 		</f7-views>
-		
+
 		<!-- Popup -->
 		<f7-popup id="popup">
 			<f7-view navbar-fixed>
@@ -121,7 +121,7 @@
 				</f7-pages>
 			</f7-view>
 		</f7-popup>
-		
+
 		<!-- Login Screen -->
 		<f7-login-screen id="login-screen">
 			<f7-view>
@@ -148,10 +148,11 @@
 				</f7-pages>
 			</f7-view>
 		</f7-login-screen>
-	
+
 	</div>
 </template>
 
 <script>
+	alert("Am in");
 	export default {}
 </script>
