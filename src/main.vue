@@ -6,53 +6,14 @@
 		<f7-statusbar></f7-statusbar>
 
 		<!-- Left Panel -->
-		<f7-panel left reveal layout="dark">
+		<f7-panel left reveal>
 			<f7-view id="left-panel-view" navbar-through :dynamic-navbar="true">
 				<f7-navbar title="Left Panel"></f7-navbar>
 				<f7-pages>
-					<f7-page>
-						<f7-block inner>
-							<p></p>
-						</f7-block>
-						<f7-block-title>Load page in panel</f7-block-title>
-						<f7-list>
-							<f7-list-item link="/about/" title="About"></f7-list-item>
-							<f7-list-item link="/form/" title="Form"></f7-list-item>
-						</f7-list>
-						<f7-block-title>Load page in main view</f7-block-title>
-						<f7-list>
-							<f7-list-item link="/about/" title="About" link-view="#main-view" link-close-panel></f7-list-item>
-							<f7-list-item link="/form/" title="Form" link-view="#main-view" link-close-panel></f7-list-item>
-						</f7-list>
-					</f7-page>
+
 				</f7-pages>
 			</f7-view>
 		</f7-panel>
-
-		<!-- Right Panel -->
-		<f7-panel right cover layout="dark">
-			<f7-view id="right-panel-view" navbar-through :dynamic-navbar="true">
-				<f7-navbar title="Right Panel" sliding></f7-navbar>
-				<f7-pages>
-					<f7-page>
-						<f7-block>
-							<p>Right panel content goes here</p>
-						</f7-block>
-						<f7-block-title>Load page in panel</f7-block-title>
-						<f7-list>
-							<f7-list-item link="/about/" title="About"></f7-list-item>
-							<f7-list-item link="/form/" title="Form"></f7-list-item>
-						</f7-list>
-						<f7-block-title>Load page in main view</f7-block-title>
-						<f7-list>
-							<f7-list-item link="/about/" title="About" link-view="#main-view" link-close-panel></f7-list-item>
-							<f7-list-item link="/form/" title="Form" link-view="#main-view" link-close-panel></f7-list-item>
-						</f7-list>
-					</f7-page>
-				</f7-pages>
-			</f7-view>
-		</f7-panel>
-
 		<!-- Main Views -->
 		<f7-views>
 			<f7-view id="main-view" navbar-through :dynamic-navbar="true" main>
@@ -61,48 +22,54 @@
 					<f7-nav-left>
 						<f7-link icon="icon-bars" open-panel="left"></f7-link>
 					</f7-nav-left>
-					<f7-nav-center sliding>Framework7</f7-nav-center>
+					<f7-nav-center sliding>Just Learn</f7-nav-center>
 					<f7-nav-right>
-						<f7-link icon="icon-bars" open-panel="right"></f7-link>
+						<f7-link icon="icon-gear" open-panel="right"></f7-link>
 					</f7-nav-right>
 				</f7-navbar>
 				<!-- Pages -->
+				<a href="#" class="floating-button color-blue">
+					<i class="icon icon-plus"></i>
+				</a>
 				<f7-pages>
-					<f7-page>
-						<f7-block-title>Welcome to my App</f7-block-title>
+					<f7-page pull-to-refresh @ptr:refresh="onRefresh">
+						<f7-block>
+						<f7-searchbar
+						  cancel-link="Cancel"
+						  placeholder="Search in items"
+						  :clear-button="true">
+						  <div slot="before-input">Before Input</div>
+						  <div slot="after-input">After Input</div>
+						</f7-searchbar>
+					</f7-block>
+					<f7-block>
+						<div class="card">
+						  <div class="card-header">Card header</div>
+						  <div class="card-content">
+						    <div class="card-content-inner">
+									Card with header and footer. Card header is used to display card title and footer for some additional information or for custom actions.</div>
+						  </div>
+						  <div class="card-footer">
+								Card Footer</div>
+						</div>
+						<div class="card">
+						  <div class="card-content">
+						    <div class="card-content-inner">
+									Another card. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat sem est, non tincidunt ligula volutpat sit amet. Mauris aliquet magna justo. </div>
+						  </div>
+						</div>
 						<f7-block inner>
-							<p>Duis sed erat ac eros ultrices pharetra id ut tellus. Praesent rhoncus enim ornare ipsum aliquet ultricies. Pellentesque sodales erat quis elementum sagittis.</p>
+							<p></p>
 						</f7-block>
-						<f7-block-title>Navigation</f7-block-title>
-						<f7-list>
-							<f7-list-item link="/about/" title="About"></f7-list-item>
-							<f7-list-item link="/form/" title="Form"></f7-list-item>
-							<f7-list-item link="/dynamic-route/blog/45/post/125/?foo=bar#about" title="Dynamic Route"></f7-list-item>
-						</f7-list>
-						<f7-block-title>Side Panels</f7-block-title>
-						<f7-block>
-							<f7-grid>
-								<f7-col width="50">
-									<f7-button open-panel="left">Left Panel</f7-button>
-								</f7-col>
-								<f7-col width="50">
-									<f7-button open-panel="right">Right Panel</f7-button>
-								</f7-col>
-							</f7-grid>
-						</f7-block>
-						<f7-block-title>Modals</f7-block-title>
-						<f7-block>
-							<f7-grid>
-								<f7-col width="50">
-									<f7-button open-popup="#popup">Popup</f7-button>
-								</f7-col>
-								<f7-col width="50">
-									<f7-button open-login-screen="#login-screen">Login Screen</f7-button>
-								</f7-col>
-							</f7-grid>
+						<f7-block-title>Load page in panel</f7-block-title>
+						<f7-block-title>Load page in main view</f7-block-title>
 						</f7-block>
 					</f7-page>
 				</f7-pages>
+				<f7-tabs animated>
+				  <f7-tab id="tab1" active><f7-icon icon="icon-gear"></f7-icon></f7-tab>
+				  <f7-tab id="tab2"><f7-icon icon="icon-home"></f7-icon></f7-tab>
+				</f7-tabs>
 			</f7-view>
 		</f7-views>
 

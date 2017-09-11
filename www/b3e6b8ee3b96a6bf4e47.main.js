@@ -163,9 +163,10 @@ module.exports = g;
 /***/ }),
 /* 2 */
 /* no static exports found */
-/*!*************************************************************!*\
-  !*** ./~/framework7/dist/css/framework7.ios.colors.min.css ***!
-  \*************************************************************/
+/* all exports used */
+/*!******************************************************************!*\
+  !*** ./~/framework7/dist/css/framework7.material.colors.min.css ***!
+  \******************************************************************/
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
@@ -173,9 +174,10 @@ module.exports = g;
 /***/ }),
 /* 3 */
 /* no static exports found */
-/*!******************************************************!*\
-  !*** ./~/framework7/dist/css/framework7.ios.min.css ***!
-  \******************************************************/
+/* all exports used */
+/*!***********************************************************!*\
+  !*** ./~/framework7/dist/css/framework7.material.min.css ***!
+  \***********************************************************/
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
@@ -183,7 +185,7 @@ module.exports = g;
 /***/ }),
 /* 4 */
 /* no static exports found */
-/* exports used: default */
+/* all exports used */
 /*!*****************************************************!*\
   !*** ./~/framework7-vue/dist/framework7-vue.min.js ***!
   \*****************************************************/
@@ -211,6 +213,7 @@ B&&"after-start"===B&&g.push(p.$slots.default[S]),B&&"after"===B&&v.push(p.$slot
 /***/ }),
 /* 5 */
 /* no static exports found */
+/* all exports used */
 /*!********************************************!*\
   !*** ./~/framework7/dist/js/framework7.js ***!
   \********************************************/
@@ -18816,7 +18819,7 @@ return t7;
 /***/ }),
 /* 6 */
 /* no static exports found */
-/* exports used: default */
+/* all exports used */
 /*!**********************!*\
   !*** ./src/main.vue ***!
   \**********************/
@@ -18855,6 +18858,7 @@ module.exports = Component.exports
 /***/ }),
 /* 7 */
 /* no static exports found */
+/* all exports used */
 /*!***********************************!*\
   !*** ./src/assets/sass/main.scss ***!
   \***********************************/
@@ -18885,7 +18889,7 @@ if(false) {
 /***/ }),
 /* 8 */
 /* no static exports found */
-/* exports used: default */
+/* all exports used */
 /*!**********************************!*\
   !*** ./~/vue/dist/vue.common.js ***!
   \**********************************/
@@ -28985,14 +28989,15 @@ module.exports = Vue$3;
 /***/ }),
 /* 9 */
 /* exports provided: default */
-/* exports used: default */
+/* all exports used */
 /*!***********************!*\
   !*** ./src/routes.js ***!
   \***********************/
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony default export */ __webpack_exports__["a"] = ([
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony default export */ __webpack_exports__["default"] = ([
   {
     path: '/about/',
     component: __webpack_require__(/*! ./assets/vue/pages/about.vue */ 16)
@@ -31612,44 +31617,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
+alert("Am in");
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 
@@ -31670,8 +31639,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('f7-statusbar'), _vm._v(" "), _c('f7-panel', {
     attrs: {
       "left": "",
-      "reveal": "",
-      "layout": "dark"
+      "reveal": ""
     }
   }, [_c('f7-view', {
     attrs: {
@@ -31683,76 +31651,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "title": "Left Panel"
     }
-  }), _vm._v(" "), _c('f7-pages', [_c('f7-page', [_c('f7-block', {
-    attrs: {
-      "inner": ""
-    }
-  }, [_c('p', [_vm._v("Left panel content goes here")])]), _vm._v(" "), _c('f7-block-title', [_vm._v("Load page in panel")]), _vm._v(" "), _c('f7-list', [_c('f7-list-item', {
-    attrs: {
-      "link": "/about/",
-      "title": "About"
-    }
-  }), _vm._v(" "), _c('f7-list-item', {
-    attrs: {
-      "link": "/form/",
-      "title": "Form"
-    }
-  })], 1), _vm._v(" "), _c('f7-block-title', [_vm._v("Load page in main view")]), _vm._v(" "), _c('f7-list', [_c('f7-list-item', {
-    attrs: {
-      "link": "/about/",
-      "title": "About",
-      "link-view": "#main-view",
-      "link-close-panel": ""
-    }
-  }), _vm._v(" "), _c('f7-list-item', {
-    attrs: {
-      "link": "/form/",
-      "title": "Form",
-      "link-view": "#main-view",
-      "link-close-panel": ""
-    }
-  })], 1)], 1)], 1)], 1)], 1), _vm._v(" "), _c('f7-panel', {
-    attrs: {
-      "right": "",
-      "cover": "",
-      "layout": "dark"
-    }
-  }, [_c('f7-view', {
-    attrs: {
-      "id": "right-panel-view",
-      "navbar-through": "",
-      "dynamic-navbar": true
-    }
-  }, [_c('f7-navbar', {
-    attrs: {
-      "title": "Right Panel",
-      "sliding": ""
-    }
-  }), _vm._v(" "), _c('f7-pages', [_c('f7-page', [_c('f7-block', [_c('p', [_vm._v("Right panel content goes here")])]), _vm._v(" "), _c('f7-block-title', [_vm._v("Load page in panel")]), _vm._v(" "), _c('f7-list', [_c('f7-list-item', {
-    attrs: {
-      "link": "/about/",
-      "title": "About"
-    }
-  }), _vm._v(" "), _c('f7-list-item', {
-    attrs: {
-      "link": "/form/",
-      "title": "Form"
-    }
-  })], 1), _vm._v(" "), _c('f7-block-title', [_vm._v("Load page in main view")]), _vm._v(" "), _c('f7-list', [_c('f7-list-item', {
-    attrs: {
-      "link": "/about/",
-      "title": "About",
-      "link-view": "#main-view",
-      "link-close-panel": ""
-    }
-  }), _vm._v(" "), _c('f7-list-item', {
-    attrs: {
-      "link": "/form/",
-      "title": "Form",
-      "link-view": "#main-view",
-      "link-close-panel": ""
-    }
-  })], 1)], 1)], 1)], 1)], 1), _vm._v(" "), _c('f7-views', [_c('f7-view', {
+  }), _vm._v(" "), _c('f7-pages')], 1)], 1), _vm._v(" "), _c('f7-views', [_c('f7-view', {
     attrs: {
       "id": "main-view",
       "navbar-through": "",
@@ -31768,63 +31667,49 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "sliding": ""
     }
-  }, [_vm._v("Framework7")]), _vm._v(" "), _c('f7-nav-right', [_c('f7-link', {
+  }, [_vm._v("Just Learn")]), _vm._v(" "), _c('f7-nav-right', [_c('f7-link', {
     attrs: {
-      "icon": "icon-bars",
+      "icon": "icon-gear",
       "open-panel": "right"
     }
-  })], 1)], 1), _vm._v(" "), _c('f7-pages', [_c('f7-page', [_c('f7-block-title', [_vm._v("Welcome to my App")]), _vm._v(" "), _c('f7-block', {
+  })], 1)], 1), _vm._v(" "), _c('f7-pages', [_c('f7-page', [_c('a', {
+    staticClass: "floating-button color-blue",
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('i', {
+    staticClass: "icon icon-plus"
+  })]), _vm._v(" "), _c('f7-block', [_c('f7-searchbar', {
+    attrs: {
+      "cancel-link": "Cancel",
+      "placeholder": "Search in items",
+      "clear-button": true
+    }
+  }, [_c('div', {
+    slot: "before-input"
+  }, [_vm._v("Before Input")]), _vm._v(" "), _c('div', {
+    slot: "after-input"
+  }, [_vm._v("After Input")])])], 1), _vm._v(" "), _c('f7-block', [_c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("Card header")]), _vm._v(" "), _c('div', {
+    staticClass: "card-content"
+  }, [_c('div', {
+    staticClass: "card-content-inner"
+  }, [_vm._v("\n\t\t\t\t\t\t\t\tCard with header and footer. Card header is used to display card title and footer for some additional information or for custom actions.")])]), _vm._v(" "), _c('div', {
+    staticClass: "card-footer"
+  }, [_vm._v("\n\t\t\t\t\t\t\tCard Footer")])]), _vm._v(" "), _c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-content"
+  }, [_c('div', {
+    staticClass: "card-content-inner"
+  }, [_vm._v("\n\t\t\t\t\t\t\t\tAnother card. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat sem est, non tincidunt ligula volutpat sit amet. Mauris aliquet magna justo. ")])])]), _vm._v(" "), _c('f7-block', {
     attrs: {
       "inner": ""
     }
-  }, [_c('p', [_vm._v("Duis sed erat ac eros ultrices pharetra id ut tellus. Praesent rhoncus enim ornare ipsum aliquet ultricies. Pellentesque sodales erat quis elementum sagittis.")])]), _vm._v(" "), _c('f7-block-title', [_vm._v("Navigation")]), _vm._v(" "), _c('f7-list', [_c('f7-list-item', {
-    attrs: {
-      "link": "/about/",
-      "title": "About"
-    }
-  }), _vm._v(" "), _c('f7-list-item', {
-    attrs: {
-      "link": "/form/",
-      "title": "Form"
-    }
-  }), _vm._v(" "), _c('f7-list-item', {
-    attrs: {
-      "link": "/dynamic-route/blog/45/post/125/?foo=bar#about",
-      "title": "Dynamic Route"
-    }
-  })], 1), _vm._v(" "), _c('f7-block-title', [_vm._v("Side Panels")]), _vm._v(" "), _c('f7-block', [_c('f7-grid', [_c('f7-col', {
-    attrs: {
-      "width": "50"
-    }
-  }, [_c('f7-button', {
-    attrs: {
-      "open-panel": "left"
-    }
-  }, [_vm._v("Left Panel")])], 1), _vm._v(" "), _c('f7-col', {
-    attrs: {
-      "width": "50"
-    }
-  }, [_c('f7-button', {
-    attrs: {
-      "open-panel": "right"
-    }
-  }, [_vm._v("Right Panel")])], 1)], 1)], 1), _vm._v(" "), _c('f7-block-title', [_vm._v("Modals")]), _vm._v(" "), _c('f7-block', [_c('f7-grid', [_c('f7-col', {
-    attrs: {
-      "width": "50"
-    }
-  }, [_c('f7-button', {
-    attrs: {
-      "open-popup": "#popup"
-    }
-  }, [_vm._v("Popup")])], 1), _vm._v(" "), _c('f7-col', {
-    attrs: {
-      "width": "50"
-    }
-  }, [_c('f7-button', {
-    attrs: {
-      "open-login-screen": "#login-screen"
-    }
-  }, [_vm._v("Login Screen")])], 1)], 1)], 1)], 1)], 1)], 1)], 1), _vm._v(" "), _c('f7-popup', {
+  }, [_c('p')]), _vm._v(" "), _c('f7-block-title', [_vm._v("Load page in panel")]), _vm._v(" "), _c('f7-block-title', [_vm._v("Load page in main view")])], 1)], 1)], 1)], 1)], 1), _vm._v(" "), _c('f7-popup', {
     attrs: {
       "id": "popup"
     }
@@ -32479,70 +32364,50 @@ module.exports = function listToStyles (parentId, list) {
 /*!*********************!*\
   !*** ./src/main.js ***!
   \*********************/
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(/*! vue */ 8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_framework7__ = __webpack_require__(/*! framework7 */ 5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_framework7___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_framework7__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_framework7_vue__ = __webpack_require__(/*! framework7-vue */ 4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_framework7_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_framework7_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_framework7_dist_css_framework7_ios_min_css__ = __webpack_require__(/*! framework7/dist/css/framework7.ios.min.css */ 3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_framework7_dist_css_framework7_ios_min_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_framework7_dist_css_framework7_ios_min_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_framework7_dist_css_framework7_ios_colors_min_css__ = __webpack_require__(/*! framework7/dist/css/framework7.ios.colors.min.css */ 2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_framework7_dist_css_framework7_ios_colors_min_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_framework7_dist_css_framework7_ios_colors_min_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__assets_sass_main_scss__ = __webpack_require__(/*! ./assets/sass/main.scss */ 7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__assets_sass_main_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__assets_sass_main_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__routes_js__ = __webpack_require__(/*! ./routes.js */ 9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__main_vue__ = __webpack_require__(/*! ./main.vue */ 6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__main_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__main_vue__);
+
+///<reference path='../node_modules/@types/vue/vue.d.ts' />
+Object.defineProperty(exports, "__esModule", { value: true });
 // Import Vue
-
-
-// Import F7
-
-
+var Vue = __webpack_require__(/*! vue */ 8);
+var Framework7 = __webpack_require__(/*! framework7 */ 5);
 // Import F7 Vue Plugin
-
-
-// Import F7 iOS Theme Styles
-
-
-/* OR for Material Theme:
- import Framework7Theme from 'framework7/dist/css/framework7.material.min.css'
- import Framework7ThemeColors from 'framework7/dist/css/framework7.material.colors.min.css'
- */
-
-// Import App Custom Styles
-
-
+var Framework7Vue = __webpack_require__(/*! framework7-vue */ 4);
+var AppStyles = __webpack_require__(/*! ./assets/sass/main.scss */ 7);
+// Import F7 Material Theme Styles
+var Framework7ThemeColors = __webpack_require__(/*! framework7/dist/css/framework7.material.colors.min.css */ 2);
+var Framework7Theme = __webpack_require__(/*! framework7/dist/css/framework7.material.min.css */ 3);
 // Import Routes
-
-
+var Routes = __webpack_require__(/*! ./routes.js */ 9);
 // Import App Component
-
-
+var App = __webpack_require__(/*! ./main.vue */ 6);
 // Init F7 Vue Plugin
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_2_framework7_vue___default.a)
-
+Vue.use(Framework7Vue);
 // Init App
-new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
-  el: '#app',
-  template: '<app/>',
-  // Init Framework7 by passing parameters here
-  framework7: {
-    root: '#app',
-    /* Uncomment to enable Material theme: */
-    // material: true,
-    routes: __WEBPACK_IMPORTED_MODULE_6__routes_js__["a" /* default */]
-  },
-  // Register App Component
-  components: {
-    app: __WEBPACK_IMPORTED_MODULE_7__main_vue___default.a
-  }
-})
+new Vue({
+    el: '#app',
+    template: '<app/>',
+    data: function () {
+        return {
+            msg: 'food is good'
+        };
+    },
+    framework7: {
+        // Init Framework7 by passing parameters here
+        root: '#app',
+        material: true,
+        routes: Routes
+    },
+    mounted: function () {
+        console.log("Vue js is done loading...");
+    },
+    // Register App Component
+    components: {
+        app: App
+    }
+});
 
 
 /***/ })
